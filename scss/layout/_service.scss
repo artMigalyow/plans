@@ -1,0 +1,33 @@
+.service{
+  .service__wrapper{
+    padding-top: 40px;
+    padding-bottom: 121px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    .service__header{
+      display: flex;
+      flex-direction: row;
+      gap: 142px;
+      align-items: center;
+      .service__title{
+        max-width: 306px;
+      }
+      .service__btn-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 559px;
+        width: 100%;
+
+      }
+    }
+    .service__grid-card{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,1fr);
+      row-gap:55px ;
+      column-gap: 116px;
+    }
+  }
+}

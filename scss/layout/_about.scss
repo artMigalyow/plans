@@ -1,0 +1,29 @@
+.about{
+  width: 100%;
+  .about__wrapper{
+    padding: 93px 0 93px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .about__container{
+      max-width:605px;
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .about__title{
+        max-width: 469px;
+        span{
+          font-size: $fontSubtitle-size;
+        }
+      }
+    }
+    .about__housePlant{
+      background-image: url(/assets/png/houseplant\ 1.png);
+      width: 464px;
+      height: 479px;
+    }
+  }
+}

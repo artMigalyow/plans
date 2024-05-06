@@ -1,0 +1,33 @@
+.welcome{
+  background-color: $bg-section;
+  width: 100%;
+  .welcom__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 0 62px 0;
+    .welcom__leafs{
+      background-image:url('/assets/png/leafs.png');
+      width: 448.8px;
+      height: 407.36px;
+    }
+    .welcom__container{
+      width: 549px;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+      .welcome__title{
+        span {
+          font-size: $fontTitle-size;
+        }
+      }
+      .welcome__text{
+        line-height: 35px;
+        letter-spacing: 0.1px
+
+      }
+    }
+  }
+}
