@@ -51,3 +51,16 @@
 
   }
 }
+
+//*------media-query ------*//
+
+@include media-mobile {
+  .header{
+    .header__wrapper{
+      .header__navigation{
+        display: none;
+        
+      }
+    }
+  }
+}

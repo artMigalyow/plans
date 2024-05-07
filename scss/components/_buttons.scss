@@ -1,7 +1,11 @@
+button:hover{
+  cursor: pointer;
+}
 .btn{
   border-color: $color-btn-border-primary;
   background-color: transparent;
   font-size: $font-size-btnText;
+
 
 }
 .welcome__btn{
@@ -10,6 +14,7 @@
   border: 2px solid $color-btn-border-primary;
   border-radius: 10px;
   color: #000;
+
 }
 .service__btn{
   width: 161px;
@@ -18,6 +23,7 @@
   font-family: $fontFamily-second;
   font-size: 20px;
   border-radius: 5px;
+
 }
 .call__btn{
   width: 162px;
@@ -26,11 +32,14 @@
   border: 1px solid $color-btn-border-primary;
   font-family: $fontFamily-second;
   font-size: 20px;
+  color: $color-btn-border-primary;
+
 }
 .prices__menu-btn{
   width: 250px;
   height: 50px;
   border-radius: 20px;
+  border: none;
   background-color: $bg-btn-price;
   display: flex;
   flex-direction: row;
@@ -40,6 +49,8 @@
   font-family: $fontFamily-primary;
   font-weight: 700;
   gap: 54px;
+
+
 }
 .contact__btn{
   width: 450px;
@@ -49,4 +60,59 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: none;
+  padding: 5px 35px 5px 20px;
+  position: relative;
+  top: 95px;
+
+
+  .contact__btn-text{
+    font-family: $fontFamily-primary;
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+
+}
+
+
+//*------media-query ------*//
+
+@include media-tablet {
+  .welcome__btn{font-size: 1rem;}
+  .btn{
+    font-size: 1rem;
+  }
+  .contact__btn{
+    width: 450px;
+
+  }
+}
+@include media-mobile {
+  .btn{
+    font-size: 1rem;
+  }
+
+  .contact__btn{
+    width: 300px;
+
+  }
+  .prices__menu-btn{
+    width: 180px;
+    height: 49.72px;
+  }
+  .call__btn{
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .service__btn{
+    width: 121px;
+    height: 35px;
+  }
+  .welcome__btn{
+    font-size: 10px;
+    width: 100px;
+    height: 34.14px ;
+  }
 }

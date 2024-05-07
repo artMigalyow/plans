@@ -6,6 +6,14 @@ body{
   max-width: 1440px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  @include media-tablet{
+    max-width: 768px;
+    overflow-x: hidden;
+  }
+  @include media-mobile{
+    max-width: 380px;
+    overflow-x: hidden;
+  }
 }
 .main{
   display: flex;
@@ -15,6 +23,17 @@ body{
 .wrapper{
   max-width: 1220px;
   margin: 0 auto;
+  @include media-tablet{
+     max-width: 668px;
+    overflow-x: hidden;
+
+  }
+  @include media-mobile {
+    max-width: 330px;
+    overflow-x: hidden;
+
+  }
+
 }
 li{
   list-style: none;
@@ -31,6 +50,11 @@ p{
   letter-spacing: 0px;
   color: $colo-text-primary;
   margin: 0;
+  @include media-tablet{
+    font-size: $mobile-fontPrim-size ;
+  }
+  @include media-mobile{}
+  font-size: $tablet-fontPrim-size ;
 
 }
 h1{
@@ -38,6 +62,12 @@ h1{
   font-size: $fontTitle-size;
   font-weight: 700;
   margin: 0;
+  @include media-tablet{
+    font-size: 35px;
+   }
+  @include media-mobile{
+    font-size: $mobile-fontTitle-size;
+  }
 }
 h2{
   font-family: $fontFamily-second;
@@ -45,7 +75,15 @@ h2{
   font-weight: 400;
   color: $color-title-second;
   margin: 0;
+  @include media-tablet{
+    font-size: 35px;
+  }
+  @include media-mobile{
+    font-size: 25px;
+  }
 }
 span {
   font-size: $fontPrim-size;
+  @include media-tablet{font-size: 1rem;}
+  @include media-mobile{font-size: 1rem;}
 }
