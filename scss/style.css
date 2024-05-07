@@ -578,6 +578,31 @@ button:hover {
     height: 34.14px;
   }
 }
+.city-card {
+  width: 480px;
+  height: 214px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 25px 55px;
+}
+.city-card .card-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 auto;
+}
+.city-card .card-list li {
+  width: 336px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.city-card .card-list li .text-card {
+  color: #636060;
+}
+
 .header {
   width: 100%;
   height: 134px;
