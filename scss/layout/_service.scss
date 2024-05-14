@@ -110,6 +110,7 @@
       .service__grid-card {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 34px;
         .service__card {
           width: 281px;
