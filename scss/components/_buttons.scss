@@ -6,6 +6,10 @@ button:hover {
   background-color: transparent;
   font-size: $font-size-btnText;
 }
+.btn:hover{
+  background-color: #E06733;
+  color: #FFFFFF;
+}
 .welcome__btn {
   width: 158px;
   height: 44px;
@@ -20,6 +24,7 @@ button:hover {
   font-family: $fontFamily-second;
   font-size: 20px;
   border-radius: 5px;
+  color: #E06733;
 }
 .call__btn {
   width: 162px;
