@@ -1058,6 +1058,7 @@ button:hover {
     order: 1;
   }
   .contacts .contact__wrapper .dropdown {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4588235294);
     top: -50px;
   }
   .contacts .contact__wrapper .dropdown:nth-of-type(3) {
